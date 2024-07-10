@@ -57,7 +57,6 @@ class Swish(nn.Module):
         else:
             self.beta = 1.0
 
-    @weak_script_method
     def forward(self, input):
         return input * torch.sigmoid(self.beta * input)
 ```
