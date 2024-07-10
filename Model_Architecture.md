@@ -18,6 +18,8 @@ All LLM models use Byte-Pair Encoding (BPE), but Mistral and LLaMA 2 use Sentenc
 
 #### 1-3. Pre-Normalization : Root Mean Square (RMS) Normalization 
 
+![image](https://github.com/domyown/LLM_Archive/assets/43026521/1bbe2e97-3c63-4164-a7ce-4d91b0cab876)
+
 ```python
 class RMSNorm(torch.nn.Module):
     def __init__(self, dim: int, eps: float = 1e-6):
